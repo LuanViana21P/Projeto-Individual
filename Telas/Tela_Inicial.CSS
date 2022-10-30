@@ -1,0 +1,334 @@
+header {
+    padding: 15px 0;
+    background-color: #000000;
+    border-bottom: 2px solid #f4eded;
+}
+
+
+.container_header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo_header {
+    color: #ffffff;
+    font-size: 10px;
+
+}
+
+.titulo_header img {
+    margin-right: auto;
+    width: 40px;
+}
+
+.navegacao_header {
+    width: 350px;
+    color: #ffffff;
+}
+
+.navegacao_header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao_header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navegacao_header ul li {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.agora {
+    font-weight: bold;
+}
+
+/*FIM DO HEADER*/
+
+/* BANNER 1 */
+
+.container {
+    background-image: url(./TwentyonePilots_img20.jpg);
+
+}
+
+.banner1 {
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.banner1 label {
+    margin-top: 50px;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.banner1 label h1 {
+    @import url(font-family: 'Francois One', sans-serif;);
+    margin-top: 270px;
+    margin-bottom: 250px;
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
+}
+
+/* BANNER 1 */
+
+
+/* BANNER 2 */
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.banner2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.banner2 img {
+    width: 700px;
+    margin-top: 150px;
+    margin-left: 115px;
+}
+
+.banner2 label {
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 100px;
+    font-size: 22px;
+}
+
+
+/* BANNER 2 */
+
+
+/* BANNER TYLER */
+
+.container3 {
+    display: flex;
+    background-color: #000;
+}
+
+.banner3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.banner3 img {
+    width: 700px;
+
+}
+
+.banner3 label {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
+    font-size: 20px;
+}
+
+/* BANNER TYLER */
+
+/* BANNER JOSH */
+
+.container4 {
+    display: flex;
+    background-color: #000;
+}
+
+.banner4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.banner4 img {
+    width: 700px;
+
+}
+
+.banner4 label {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
+    font-size: 20px;
+}
+
+/* BANNER JOSH */
+
+
+/* CARROSSEL */
+
+
+.container4{
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container4 h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+.container_galeria {
+    
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.galeria-wrapper {
+    overflow-x: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;   
+}
+
+.galeria p{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+    2px -1px 2px #000, -1px -1px #000;
+}
+
+P#selftitled {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+P#rab {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: ;
+}
+
+P#vessel {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+P#blurryface {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+P#trench {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #fff;
+}
+
+.caixa_album{
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 1;
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+.galeria-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* CARROSSEL */
+
+
+/*RODAPÉ/FOOTER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 15px 0;
+    background-color: #000000;
+    border-top: 2px solid #f4eded;
+}
+
+footer .container_header {
+    justify-content: center;
+}
+
+footer p {
+    color: #f4eded;
+}
