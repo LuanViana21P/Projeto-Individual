@@ -15,14 +15,21 @@ header {
 }
 
 .titulo_header {
+    display: flex;
+    flex-direction: column;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 15px;
 
 }
 
 .titulo_header img {
     margin-right: auto;
-    width: 40px;
+    width: 70px;
+    margin-left: 35px;
+}
+
+.titulo_header p {
+    text-align: center;
 }
 
 .navegacao_header {
@@ -121,28 +128,27 @@ header {
 
 .container3 {
     display: flex;
-    background-color: #000;
+    background-image: url(./TwentyonePilots_img12.jpg);
 }
 
 .banner3 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
-.banner3 img {
-    width: 700px;
-
-}
-
 .banner3 label {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
         2px -1px 2px #000, -1px -1px #000;
     font-size: 20px;
+    margin-left: 35px;
+}
+
+.banner3 h2 {
+    text-align: center;
 }
 
 /* BANNER TYLER */
@@ -151,45 +157,61 @@ header {
 
 .container4 {
     display: flex;
-    background-color: #000;
+    justify-content: flex-end;
+    background-image: url(./TwentyonePilots_img30ATUALIZADA.jpg);
 }
 
 .banner4 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
-.banner4 img {
-    width: 700px;
-
-}
-
 .banner4 label {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
         2px -1px 2px #000, -1px -1px #000;
     font-size: 20px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+
+.banner4 h2 {
+    text-align: center;
 }
 
 /* BANNER JOSH */
+
+/* BANNER BRASIL */
+
+.container5 {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.banner5 h1{
+    color: #fff;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+/* BANNER BRASIL */
 
 
 /* CARROSSEL */
 
 
-.container4{
+.container6{
     display: flex;
     background-color: #000;
     justify-content: center;
     flex-direction: column;
 }
 
-.container4 h1{
+.container6 h1{
     color: #ffffff;
     text-align: center;
 }
@@ -228,7 +250,7 @@ P#selftitled {
 P#rab {
     font-family: 'Merriweather Sans', sans-serif;
     color: rgb(255, 255, 255);
-    background-image: ;
+   
 }
 
 P#vessel {
