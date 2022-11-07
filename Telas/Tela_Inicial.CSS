@@ -1,8 +1,8 @@
 
 
-*{   
-    font-family: 'Fjalla One', sans-serif;
-    /*font-family: 'Lexend Deca', sans-serif;*/
+*{  
+  /*font-family: 'Noto Sans Limbu', sans-serif;*/
+  font-family: 'Bayon', sans-serif;
     margin: 0;
     padding: 0;
     outline: none;
@@ -30,7 +30,6 @@ header {
     flex-direction: column;
     color: #ffffff;
     font-size: 15px;
-
 }
 
 .titulo_header img {
@@ -89,7 +88,7 @@ header {
 }
 
 .banner1 h1 {
-    font-family: 'Russo One', sans-serif;
+    font-weight: 10000px;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 100px;
@@ -148,19 +147,37 @@ header {
     align-items: baseline;
 }
 
+.texto_banner2 {
+    display: flex;
+    background-color: rgba(32, 31, 31, 0.884);
+    flex-direction: column;
+    width: 790px;
+    height: 400px;
+    margin-bottom: 200px;
+    margin-top: 250px;
+    margin-right: 70px;
+    border: 5px solid rgb(198, 193, 193);
+    border-radius: 25px;
+}
+
+.texto_banner2 img {
+    width: 125px;
+    margin-left: 20px;
+}
+
 .texto_banner2 p {
  
     display: flex;
-    font-weight: 1000;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
     color: #ffffff;
     text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
     2px -1px 2px #000, -1px -1px #000;
     margin-bottom: 100px;
     font-size: 22px;
-    margin-top: 300px;
-    margin-bottom: 200px;
-    margin-right: 30px;
+    margin-left: 7px;
+
+
 }
 
 
@@ -181,18 +198,42 @@ header {
     margin-bottom: 150px;
 }
 
-.banner3 label {
+.texto_banner3 {
+    display: flex;
+    background-color: rgba(32, 31, 31, 0.884);
+    flex-direction: column;
+    width: 810px;
+    height: 525px;
+    margin-bottom: 25px;
+    margin-top: 150px;
+    margin-left: 70px;
+    border: 5px solid rgb(198, 193, 193);
+    border-radius: 25px;
+}
+
+.texto_banner3 img {
+    width: 125px;
+    margin-left: 20px;
+}
+
+.banner3 p {
     color: #ffffff;
-    font-weight: 1000;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
     text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
         2px -1px 2px #000, -1px -1px #000;
     font-size: 20px;
-    margin-left: 35px;
+    
 }
 
 .banner3 h2 {
     text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
+    font-size: 20px;
+    margin-left: 35px;
 }
 
 /* BANNER TYLER */
@@ -211,19 +252,41 @@ header {
     margin-bottom: 150px;
 }
 
-.banner4 label {
+.texto_banner4 {
+    display: flex;
+    background-color: rgba(32, 31, 31, 0.884);
+    flex-direction: column;
+    width: 810px;
+    height: 525px;
+    margin-bottom: 25px;
+    margin-top: 150px;
+    margin-right: 70px;
+    border: 5px solid rgb(198, 193, 193);
+    border-radius: 25px;
+}
+
+.texto_banner4 img {
+    width: 125px;
+    margin-left: 20px;
+}
+
+
+.texto_banner4 p {
+    font-weight: 600;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
         2px -1px 2px #000, -1px -1px #000;
     font-size: 20px;
-    margin-right: 100px;
     margin-top: 50px;
-    margin-bottom: 125px;
 }
 
-.banner4 h2 {
+.texto_banner4 h2 {
     text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
 }
 
 /* BANNER JOSH */
@@ -233,13 +296,96 @@ header {
 .container5 {
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
+    
 }
 
 .banner5 h1{
     color: #fff;
-    font-size: 100px;
+    font-size: 50px;
     margin-top: 100px;
+    text-align: center;
+
+}
+
+.banner5 p {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 150;
+}
+
+
+
+.container_galeria2 {
+    
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.galeria-wrapper2 {
+    overflow-x: auto;
+}
+
+.galeria2 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;   
+}
+
+
+.caixa_album2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-left2,
+.arrow-right2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right2 {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left2:hover,
+.arrow-right2:hover {
+    opacity: 1;
+}
+
+.item2 {
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+    border: 5px solid rgb(0, 0, 0);
+    transition: all 600ms ease-in-out;
+}
+
+.current-item2 {
+    opacity: 1;
+}
+
+.galeria-wrapper2::-webkit-scrollbar {
+    display: none;
 }
 
 /* BANNER BRASIL */
@@ -258,6 +404,7 @@ header {
 .container6 h1{
     color: #ffffff;
     text-align: center;
+    margin-top: 50px;
 }
 
 .container_galeria {
@@ -266,7 +413,7 @@ header {
     padding: 15px;
     max-width: 640px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .galeria-wrapper {
@@ -353,15 +500,44 @@ P#trench {
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
     opacity: 0.5;
-    border: 5px solid rgb(0, 0, 0);
     transition: all 600ms ease-in-out;
 }
 
 .current-item {
     opacity: 1;
-    border: 5px solid rgb(246, 255, 0);
-    box-shadow: 0 0 10px rgb(255, 247, 0);
 }
+
+#caixa_selftitled:hover {
+    box-shadow: 0 0 30px rgb(242, 246, 248);
+}
+
+#caixa_rab:hover {
+    box-shadow: 0 0 30px rgb(19, 155, 234);
+    border: solid 2px rgb(19, 155, 234);
+}
+
+#caixa_vessel:hover {
+    box-shadow: 0 0 30px rgb(22, 73, 140);;
+    border: solid 2px rgb(22, 73, 140);
+}
+
+
+#caixa_blurryface:hover {
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+    border: solid 2px rgb(255, 0, 0);
+}
+
+#caixa_trench:hover {
+    box-shadow: 0 0 30px rgb(255, 247, 0);
+    border: solid 2px rgb(255, 238, 0);
+}
+
+#caixa_heathens:hover {
+    box-shadow: 0 0 30px rgb(160, 27, 111);
+    border: solid 2px rgb(160, 27, 111);
+}
+
+
 
 .galeria-wrapper::-webkit-scrollbar {
     display: none;
@@ -370,8 +546,73 @@ P#trench {
 
 /* CARROSSEL */
 
+/* CONTAINER 7 */
 
-/*RODAPÉ/FOOTER*/
+.container7{
+    display: flex;
+    justify-content: center;
+    background-image: url(./TwentyonePilots_img_TRENCH7.jpg);
+}
+
+.banner7 {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    justify-content: center;
+    gap: 15%;
+}
+
+.skeleton{
+    display: flex;
+    border: solid #fff 7px;
+    border-radius: 10px;
+    width: 330px;
+    height: 350px;
+}
+
+.skeleton img{
+    width: 500px;
+}
+
+.skeleton h2 {
+    position: absolute;
+    text-align: center;
+    margin-top: 122px;
+    color: #fff;
+    margin-left: 80px;
+    font-weight: 1000;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+    2px -1px 2px #000, -1px -1px #000;
+}
+
+.emmy {
+    display: flex;
+    border: solid #fff 10px;
+    width: auto;
+    height: 350px;
+    border: solid #fff 7px;
+    border-radius: 10px;
+}
+
+.emmy img {
+    width: 300px;
+}
+
+.emmy h1 {
+    position: absolute;
+    text-align: center;
+    margin-top: 122px;
+    color: #fff;
+    margin-left: 80px;
+    font-weight: 1000;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+    2px -1px 2px #000, -1px -1px #000;
+}
+
+
+
+/* CONTAINER 7 */
+
 
 /* BARRA DE ROLAMENTO */
 
@@ -391,6 +632,8 @@ P#trench {
 
 /* BARRA DE ROLAMENTO */
 
+
+/*RODAPÉ/FOOTER*/
 footer {
     padding: 15px 0;
     background-color: #000000;
@@ -403,4 +646,5 @@ footer .container_header {
 
 footer p {
     color: #f4eded;
+    text-decoration: none;
 }

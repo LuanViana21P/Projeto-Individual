@@ -33,3 +33,39 @@ controls.forEach((control) => {
     items[currentItem].classList.add("current-item");    
     });
 });
+
+/*const controls2 = document.querySelectorAll(".control2");
+let currentItem2 = 0;
+const items2 = document.querySelectorAll(".item2");
+const maxItems2 = items2.length;
+
+controls2.forEach((control2) => {
+    control2.addEventListener('click', (e) => {
+        isLeft2 = e.target.classList.contains("arrow-left2");
+
+    if (isLeft2) {
+        currentItem2 -= 1;
+    } else {
+        currentItem2 += 1;
+    }
+
+    if (currentItem2 >= maxItems2) {
+        currentItem2 = 0;
+    }
+
+    if (currentItem2 < 0) {
+        currentItem2 = maxItems2 - 1
+    }
+
+    items2.forEach((item2) =>
+    item2.classList.remove("current-item2"));
+
+    items2[currentItem2].scrollIntoView({
+       behavior: "smooth",
+       inline: "center"
+        
+    });
+
+    items2[currentItem2].classList.add("current-item2");    
+    });
+});*/
