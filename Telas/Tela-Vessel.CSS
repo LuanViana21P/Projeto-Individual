@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square');
+@import url('https://fonts.googleapis.com/css2?family=Hind');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Nova Square', cursive;
+}
+
+.header {
+    height: 95px;
+    width: 100%;
+    /*background-color: rgb(13, 71, 207);*/
+    background-image: linear-gradient(to bottom, rgb(3, 3, 255), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+}
+
+ nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo img {
+  width: 130px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 30px;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  transition: .3s;
+  text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+  2px -1px 2px #000, -1px -1px #000;
+}
+
+#button_header{
+  border: none;
+  background: #000000;
+  padding: 12px 30px;
+  border: solid 3px white;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+#button_header:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+/* HEADER */
+
+/* CONTAINER 1*/
+
+.container1 {
+    background-image: url(./TwentyonePilots_img4.jpg);
+}
+
+.banner1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 95px;
+}
+
+.banner1 img {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    box-shadow: 0px 0px 30px rgb(13, 71, 207);
+}
+
+.banner1 h1 {
+    margin-top  : 150px;
+    color: white;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+    2px -1px 2px #000, -1px -1px #000;
+    margin-left: 15px;
+}
+
+.texto_banner1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto_banner1 p {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+  2px -1px 2px #000, -1px -1px #000;
+  margin-left: 15px;
+}
+
+#data {
+  font-size: 20px;
+}
+
+/* CONTAINER 1*/
+
+/* CONTAINER 2*/      
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url(./trees_fundo.jpeg);
+}
+
+.banner2{
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+
+.banner2 h1 {
+  color: white;
+  text-align: center;
+  border: 3px solid white;
+  transition: 0.5s;
+}
+
+.banner2 h1:hover {
+  background-color: rgba(0, 0, 0, 0.799);
+  border: 3px solid white;
+  color: white
+}
+
+#video_trees {
+  box-shadow: 0px 0px 30px black;
+}
+
+.texto_banner2 {
+  flex-direction: column;
+  margin-top: 180px;
+  border: 3px solid white;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 30px black;
+  background-color: rgba(0, 0, 0, 0.79);
+  width: 800px;
+  height: 600px;
+}
+
+.texto_banner2 h1 {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.texto_banner2 p {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+/* CONTAINER 2*/
+
+/* CONTAINER 2*/      
+
+.container3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  background-image: url(./fundo_holding.jpg);
+}
+
+.banner3{
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+
+.banner3 h1 {
+  color: white;
+  text-align: center;
+  border: 3px solid white;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.banner3 h1:hover {
+  background-color: rgba(255, 255, 255, 0.799);
+  border: 3px solid white;
+  color: black
+}
+
+#video_holding {
+  box-shadow: 0px 0px 30px black;
+}
+
+.texto_banner3 {
+  flex-direction: column;
+  margin-top: 180px;
+  border: 3px solid white;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 30px black;
+  background-color: rgba(0, 0, 0, 0.861);
+  width: 800px;
+  height: 450px;
+  height: 500px;
+}
+
+.texto_banner3 h1 {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.texto_banner3 p {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+/* CONTAINER 3*/
+
+/* CONTAINER 2*/      
+
+.container4 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url(./fundo_gunsforhands2.png);
+}
+
+.banner4{
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+
+.banner4 h1 {
+  color: white;
+  text-align: center;
+  border: 3px solid white;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.banner4 h1:hover {
+  background-color: rgba(255, 255, 255, 0.799);
+  border: 3px solid white;
+  color: black
+}
+
+#video_guns {
+  box-shadow: 0px 0px 30px black;
+}
+
+.texto_banner4 {
+  flex-direction: column;
+  margin-top: 180px;
+  border: 3px solid white;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 30px black;
+  background-color: rgba(0, 0, 0, 0.861);
+  width: 800px;
+  height: 450px;
+  height: 580px;
+}
+
+.texto_banner4 h1 {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.texto_banner4 p {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+/* CONTAINER 4*/
+
+/* CONTAINER 5 */
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  background-image: url(./fundo_vessel.jpg);
+}
+
+.banner5{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+.container5 h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  margin-top: 50px;
+
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #000, -1px 3px 3px #000,
+  3px -1px 3px #000, -1px -1px #000;
+}
+
+.bloco{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.musica {
+  gap: 15%;
+  margin-top: 30pxpx;
+  margin-right: 50px;
+}
+
+/* CONTAINER 5 */
+
+/* BARRA DE ROLAMENTO */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical{
+  height: 5px;
+  background-color: #666;
+}
+
+/* BARRA DE ROLAMENTO */
+
+
+/* FOOTER */
+.redes_sociais {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .rede_social {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    gap: 3%;
+  }
+  
+  .rede_social p {
+    color: #fff;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+  }
+  
+  .rede_social a {
+    text-decoration: none;
+  }
+  
+  .redes_sociais img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  footer {
+      padding: 15px 0;
+      background-color: #000000;
+      border-top: 2px solid #f4eded;
+  }
+  
+  .container_footer {
+      display: flex;
+      justify-content: center;
+  }
+  
+  footer p {
+      color: #f4eded;
+      text-decoration: none;
+  }
