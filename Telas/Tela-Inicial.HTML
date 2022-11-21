@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We´re Twenty Øne Piløts</title>
     <link rel="stylesheet" href="Tela_Inicial.CSS">
-    <link rel="stylesheet" href="Tela-Inicial.JS">
 </head>
 
 <body>
 
-    <header>
-        <div class="container_header">
-            <div class="titulo_header">
-                <img src="./logo_branco.png">
-                <p> We´re Twenty Øne Piløts</p>
-            </div>
-            <div class="navegacao_header">
-                <ul>
-                    <li><a href="TelaInicial.HTML">HomeTown</a></li>
-                    <li>|</li>
-                    <li><a href="TelaDeLogin.HTML">Login</a></li>
-                    <li><a href="SmartIce-Cadastro.HTML">Cadastro</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <div class="header">
+        <nav>
+            <h2 class="logo"> <img src="logo_branco.png"></h2>
+            <ul>
+                <li><a href="#">HomeTown</a></li>
+                |
+                <li><a href="#">Login</a></li>
+                |
+                <li><a href="#">Cadastro</a></li>
+                |
+                <li><a href="#">Skeleton Clique</a></li>
+                |
+                <li><a href="#">Quiz</a></li>
+            </ul>
+            <button type="button" id="button_header">Ouça agora!</button>
+        </nav>
+    </div>
 
     <!--CONTAINER 1-->
 
@@ -119,7 +119,7 @@
                     da equipe, junto de Tyler.
                     Em 2017, Josh foi indicado como melhor baterista do ano, pela Alternative Music Awards, e
                     levando o troféu para casa. Josh é sem sombra de dúvidas um dos bateristas mais
-                    talentosos de sua geração, trazendo uma preseça de palco sem ígual.
+                    talentosos de sua geração, trazendo uma presença de palco sem ígual.
                 </p>
             </div>
         </div>
@@ -128,153 +128,286 @@
 
     <!-- CONTAINER BRASIL -->
 
-    <!--<div class="container5">
+    <div class="container5">
         <div class="banner5">
-            <h1>Twenty One Pilots no Brasil</h1>
+            <div class="texto_imagem_banner5">
+                <div class="texto_banner5">
+                    <h1>Twenty One Pilots no Brasil</h1>
 
-            <p>
-                A banda já veio ao Brasil 3 vezes, nos anos de 2016, 2019 e mais recentemente em 2022. As duas <br> primeiras
-                visitas ao Brasil (2016/2019) ocorreram no Loollapalooza, enquanto a de 2022 aconteceu na GPweek. <br>
-                Mas o grande destaque de todas essas aparições sem sombra de dúvidas foi no Loollapalooza 2019,<br> onde a
-                eles fizeram o que foi considerado pela maioria, o melhor show de daquela edição, Enquanto <br> o tempo passava,
-                 a apresentação parecia um festival de hits, não importava a faixa, a empolgação <br>
-                e os gritos aumentavam assim que as primeiras notas ressoavam pelo espaço. A mistura de todos esses <br>
-                elementos acabam transformando a apresentação da dupla em algo grandioso, já que a performance <br>
-                e a interação dos dois funciona de maneira realmente poderosa, hipnotizando o público.
-            </p>
+                    <p>
+                        A banda já veio ao Brasil 3 vezes, nos anos de 2016, 2019 <br> e mais recentemente em 2022.
+                        As duas primeiras visitas <br> ao Brasil (2016/2019) ocorreram no Loollapalooza, enquanto <br>
+                        a de 2022 aconteceu na GPweek. <br>
+                        Mas o grande destaque de todas essas aparições sem <br> sombra de dúvidas foi no Loollapalooza
+                        2019, onde eles <br> fizeram o que foi considerado pela maioria, o melhor show <br> de daquela
+                        edição, Enquanto o tempo passava, a apresentação <br> parecia um festival de hits, não importava
+                        a faixa, a <br> empolgação e os gritos aumentavam assim que as primeiras <br> notas ressoavam
+                        pelo espaço. A mistura de todos
+                        esses <br> elementos acabam transformando a apresentação da dupla em <br> algo grandioso, já que
+                        a
+                        performance e a interação dos dois <br> funciona de maneira realmente poderosa, hipnotizando
+                        o público.
+                    </p>
+                </div>
 
-            <h1>Fotos do Loollapalooza 2019:</h1> -->
+                <img src="./TwentyonePilots_imgBRASIL.jpg" width="450px">
 
-    <div class="conteudo">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1">
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-            <input type="radio" name="slide" id="slide6">
-
-            <div class="slide s1">
-                <img src="./TwentyonePilots_imgBRASIL.jpg">
             </div>
 
+            <div class="container_slide_brasil">
+                <h1 id="lolla">Fotos do Loollapalooza 2019 e GPweek</h1>
+                <div class="slider">
+                    <div class="slides">
 
-            <div class="slide">
-                <img src="./TwentyonePilots_imgBRASIL2.jpg">
-            </div>
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <input type="radio" name="radio-btn" id="radio6">
+                        <input type="radio" name="radio-btn" id="radio7">
+                        <input type="radio" name="radio-btn" id="radio8">
+
+                        <div class="slide first">
+                            <img src="./TwentyonePilots_imgBRASIL6.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL7.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL34.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL8.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./TwentyonePilots_imgBRASIL5.jpg" alt="">
+                        </div>
 
 
-            <div class="slide">
-                <img src="./TwentyonePilots_imgBRASIL3.jpg">
-            </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                            <div class="auto-btn7"></div>
+                            <div class="auto-btn8"></div>
+                        </div>
 
+                    </div>
 
-            <div class="slide">
-                <img src="./TwentyonePilots_imgBRASIL34.jpg">
-            </div>
-
-
-            <div class="slide">
-                <img src="./TwentyonePilots_imgBRASIL4.jpg">
-            </div>
-
-
-            <div class="slide">
-                <img src="./TwentyonePilots_imgBRASIL5.jpg">
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                        <label for="radio7" class="manual-btn"></label>
+                        <label for="radio8" class="manual-btn"></label>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <script type="text/Javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if (counter > 8) {
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
 
-        <div class="navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
-            <label class="bar" for="slide6"></label>
-        </div>
-    </div>
-    </div>
     <!-- CONTAINER BRASIL -->
+
+    <!--EMMY -->
+
+    <div class="container7">
+        <div class="banner7">
+            <h1>"<span style="color: red;">Anyone </span> from<br>
+                <span style="color: red" ;>Anywhere </span>can do <br>
+                <span style="color: red" ;>Anything</span>."
+            </h1>
+        </div>
+    </div>
+    <div class="texto_banner7">
+        <div class="texto7">
+            <h1>Premiação</h1>
+            <p>
+                Em 2017, o Twenty One Pilots recebeu o seu primeiro Grammy. <br>
+                A banda foi indicada na categoria de melhor duo musical do <br> ano,
+                Além de diversas outras indicações que a dupla recebeu <br> pelo
+                enorme sucesso do album <span style="color: red;">Blurryface</span>
+                e do Single Heathens.
+            </p>
+        </div>
+        <img src="./trofeu_grammy.jpg" width="600px">
+    </div>
+
+    <div class="texto2_banner7">
+        <div class="texto7">
+            <h1>Discurso</h1>
+            <p>
+                Ao serem anunciados como vencedores, Tyler e Josh <br> tiraram as suas calças antes de
+                subirem ao palco <br> para receber o prêmio. <br>
+                E no seu discurso, Tyler explicou que anos antes Josh, <br> alguns amigos e ele estavam
+                assistindo a premiação,<br> e estavam exatamente sem calças. Quando Josh propôs <br> que se
+                um dia eles vencessem um grammy, eles deveriam <br> receber o prêmio apenas de cueca.
+                Tyler finalizou o <br> discurso dizendo que: <br> "<span style="color: red;">qualquer um</span>,
+                de <span style="color: red;">qualquer lugar</span>, pode fazer
+                <span style="color: red;">qualquer coisa</span>".
+            </p>
+        </div>
+        <img src="./premio_cueca.JPEG" width="600px">
+    </div>
+
+    <!-- CLIQUE E EMMY -->
 
     <!-- CARROSEL -->
     <div class="container6">
 
         <h1>Discografia</h1>
 
-        <div class="container_galeria">
-            <button class="arrow-left
-            control" aria-label="Previous
-            image"> ᐸ </button>
-            <button class="arrow-right
-            control" aria-label="Next
-            image"> ᐳ </button>
-            <div class="galeria-wrapper">
-                <div class="galeria">
-                    <div class="caixa_album">
-                        <a href=""><img src="./TwentyonePilots_img_capaSELFTITLED.jpg" id="caixa_selftitled"
-                                class="item current-item"></a>
-                        <p id="selftitled">Selftitled</p>
+        <div class="container_albuns">
+            <button class="arrow-left controle" aria-label="Imagem Anterior">
+                ◀
+            </button>
+            <button class="arrow-right controle" aria-label="Proxima Imagem">
+                ▶
+            </button>
+
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <div class="caixa_capa">
+                        <img src="./seltitled_capa.jpg" class="item item-atual" id="caixa_selftitled">
+                        <p>Selftitled</p>
                     </div>
-                    <div class="caixa_album">
-                        <a href=""><img src="./Twenty_One_Pilots_-_Regional_at_Best.png" id="caixa_rab"
-                                class="item current-item"></a>
-                        <p id="rab">Regional at Best</p>
+                    <div class="caixa_capa">
+                        <img src="./Twenty_One_Pilots_-_Regional_at_Best.png" class="item item-atual" id="caixa_RAB">
+                        <p>Regional at Best</p>
                     </div>
-                    <div class="caixa_album">
-                        <a href=""><img src="./Twenty-One-Pilots-Vessel.JPEG" id="caixa_vessel"
-                                class="item current-item"></a>
-                        <p id="vessel">Vessel</p>
+                    <div class="caixa_capa">
+                        <img src="./Twenty-One-Pilots-Vessel.JPEG" class="item item-atual" id="caixa_vessel">
+                        <p>Vessel</p>
                     </div>
-                    <div class="caixa_album">
-                        <a href=""><img src="./Twenty-One-Pilots-Blurryface.JPG" id="caixa_blurryface"
-                                class="item current-item"></a>
-                        <p id="blurryface"> <s>Blurryface</s></p>
+                    <div class="caixa_capa">
+                        <img src="./Twenty-One-Pilots-Blurryface.JPG" class="item item-atual" id="caixa_blurryface">
+                        <p>Blurryface</p>
                     </div>
-                    <div class="caixa_album">
-                        <a href=""><img src="./Twenty-One-Pilots-Trench.JPG" id="caixa_trench"
-                                class="item current-item"></a>
-                        <p id="trench">Trench</p>
+                    <div class="caixa_capa">
+                        <img src="./Twenty-One-Pilots-Trench.JPG" class="item item-atual" id="caixa_trench">
+                        <p>Trench</p>
                     </div>
-                    <div class="caixa_album">
-                        <a href=""><img src="./capa_heathens.jpeg" id="caixa_heathens" class="item current-item"></a>
-                        <p id="heathens">Singles</p>
+                    <div class="caixa_capa">
+                        <img src="./capa_heathens.jpeg" class="item item-atual" id="caixa_heathens">
+                        <p>Singles</p>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- CARROSEL -->
 
-    <!-- CLIQUE E EMMY -->
+        <div class="redes_sociais">
 
-    <div class="container7">
-        <div class="banner7">
-            <a href="">
-                <div class="skeleton">
-                    <img src="./TwentyonePilots_img_skeleton2cortado.jpg">
-                    <h2> SKELETON <br> CLIQUE</h2>
-                </div>
-            </a>
-            <a href="">
-                <div class="emmy">
-                    <img src="./capa_emmy.JPEG">
-                    <h1>EMMY´S</h1>
-                </div>
-            </a>
+            <div class="rede_social">
+                <img src="./simbolo_facebook.png">
+                <a href="https://www.facebook.com/twentyonepilots/events/">
+                    <p>Twenty One Pilots</p>
+                </a>
+            </div>
+
+            <div class="rede_social">
+                <img src="./simbolo_insta.png">
+                <a href="https://www.instagram.com/twentyonepilots/">
+                    <p>@twentyonepilots</p>
+                </a>
+            </div>
+
+            <div class="rede_social">
+                <img src="./simbolo_spotify.png">
+                <a href="https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx">
+                    <p>Twenty One Pilots</p>
+                </a>
+            </div>
+
+            <div class="rede_social">
+                <img src="./simbolo_tiktok.png">
+                <a href="https://www.tiktok.com/@twentyonepilots">
+                    <p>twentyonepilots</p>
+                </a>
+            </div>
+
+            <div class="rede_social">
+                <img src="./simbolo_twitter.png">
+                <a href="https://twitter.com/twentyonepilots?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <p>@twentyonepilots</p>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- CLIQUE E EMMY -->
+    <script type="text/Javascript">
+    const controles = document.querySelectorAll(".controle");
+    let itemAtual = 0;
+    const itens = document.querySelectorAll(".item");
+    const maximoitens = itens.length;
+    
+    controles.forEach((controle) => {
+      controle.addEventListener("click", (e) => {
+        isLeft = e.target.classList.contains("arrow-left");
+    
+        if (isLeft) {
+          itemAtual -= 1;
+        } else {
+          itemAtual += 1;
+        }
+    
+        if (itemAtual >= maximoitens) {
+          itemAtual = 0;
+        }
+    
+        if (itemAtual < 0) {
+          itemAtual = maximoitens - 1;
+        }
+    
+        itens.forEach((item) => item.classList.remove("item-atual"));
+    
+        itens[itemAtual].scrollIntoView({
+          behavior: "smooth",
+          inline: "center"
+        });
+    
+        itens[itemAtual].classList.add("item-atual");
+      });
+    });
+    
+    </script>
+
+    <!-- CARROSEL -->
 
 
     <footer>
         <div class="container_header">
-            <p>We´re Twenty Øne Piløts //-// &copy; 2022</p>
+            <p>We´re Twenty Øne Piløts ||-// &copy; 2022</p>
+            <i class="fa-brands fa-spotify"></i>
         </div>
     </footer>
 
 </body>
 
-<script src="Tela-Inicial.JS"></script>
 
 </html>
