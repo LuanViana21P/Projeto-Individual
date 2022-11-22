@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One");
 
 * {
     margin: 0;
@@ -10,7 +10,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Big Shoulders Display", cursive;
   height: 100px;
 }
 .banner {
@@ -38,17 +37,18 @@ body {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  color: #ffff;
-  font-size: 80px;
+  color: rgb(237, 233, 255);
+  font-size: 70px;
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000,
   1px -1px 1px #000, -1px -1px #000;
   margin-bottom: 20px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 5px;
 }
 
 .texto_imagem_banner{
     margin-right: 100px;
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
 .content {
@@ -73,7 +73,7 @@ body {
     border: 1px solid white;
     box-shadow: 0 0 20px 0 black;
     margin-left: 1050px;
-    margin-top: 130px;
+    margin-top: 115px;
   }
   
   form {
