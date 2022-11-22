@@ -365,6 +365,11 @@ nav ul li a:hover {
   color: #fff;
   font-family: 'Hind', sans-serif;
   font-weight: bold;
+  transition: 0.6s;
+}
+
+.rede_social p:hover {
+  color: black;
 }
 
 .rede_social a {
