@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imgs/logo_branco.png">
+    <link rel="stylesheet" href="css/Login.CSS">
+    <title>twenty one pilots</title>
+    <script src="./js/funcoes.js"></script>
+    <script src="./js/cadastro.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+
+
+    <div class="banner_alerta">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
+
+        <div class="banner">
+            <video autoplay muted loop>
+                <source src="assets/imgs/Video-Tela-Inicial-Atualizado.mp4" type="video/mp4">
+            </video>
+            
+            <div class="content">
+    
+                <div class="texto_imagem_banner">
+    
+                    <h1>We´re<br> Twenty Øne Piløts</h1>
+        
+                    <img src="./assets/imgs/logo_vessel.png" width="300px">
+        
+                </div>
+    
+                <div class="container">
+                    <div class="buttonsForm">
+                      <div class="btnColor"></div>
+                      <button id="btnSignin"> <span style="color: white;">Login</span> </button>
+                      <button id="btnSignup"> <span style="color: white;">Cadastro</span> </button>
+                    </div>
+              
+                    <div class="signin" id="signin">
+                      <input id="email_input" type="text" placeholder="Email" required />
+                      <i class="fas fa-envelope iEmail"></i>
+                      <input id="senha_input" type="password" placeholder="*******" required />
+                      <i class="fas fa-lock iPassword"></i>
+                      <button onclick="entrar()">Entrar</button>
+                    </div>
+              
+                    <form id="signup">
+                      <input id="nome_input" type="text" placeholder="Nome" required />
+                      <i class="fas fa-envelope iNome"></i>                  
+                      <input id="email_input_cadastro" type="text" placeholder="Email" required />
+                      <i class="fas fa-envelope iEmail"></i>
+                      <input id="senha_input_cadastro" type="password" placeholder="Senha" required />
+                      <i class="fas fa-lock iPassword"></i>
+                      <input id="confirmacao_senha_input" type="password" placeholder="Confirmar Senha" required />
+                      <i class="fas fa-lock iPassword2"></i>
+                      <button onclick="cadastrar()">Cadastrar</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
+
+
+<script type="text/Javascript">
+
+    var formSignin = document.querySelector('#signin')
+    var formSignup = document.querySelector('#signup')
+    var btnColor = document.querySelector('.btnColor')
+    
+    document.querySelector('#btnSignin')
+      .addEventListener('click', () => {
+        formSignin.style.left = "25px"
+        formSignup.style.left = "450px"
+        btnColor.style.left = "0px"
+        formSignin.style = "display: block"
+    })
+
+    document.querySelector('#btnSignup')
+      .addEventListener('click', () => {
+        formSignin.style.left = "-450px"
+        formSignup.style.left = "25px"
+        btnColor.style.left = "110px"
+        formSignin.style = "display: none"
+    })
+    
+    </script>
