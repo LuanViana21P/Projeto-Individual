@@ -84,7 +84,7 @@ ul {
 /* BANNER 1 */
 
 .container {
-    background-image: url(./TwentyonePilots_img7.jpg);
+    background-image: url(../assets/imgs/TwentyonePilots_img7.jpg);
     display: flex;
     justify-content: flex-start;
 }
@@ -148,7 +148,7 @@ ul {
 .container2 {
     display: flex;
     justify-content: flex-end;
-    background-image: url(./TwentyonePilots_img_SKELETON8versao2.jpg);
+    background-image: url(../assets/imgs/TwentyonePilots_img_SKELETON8versao2.jpg);
 }
 
 
@@ -200,7 +200,7 @@ ul {
 
 .container3 {
     display: flex;
-    background-image: url(./TwentyonePilots_img12.jpg);
+    background-image: url(../assets/imgs/TwentyonePilots_img12.jpg);
 }
 
 .banner3 {
@@ -256,7 +256,7 @@ ul {
 .container4 {
     display: flex;
     justify-content: flex-end;
-    background-image: url(./TwentyonePilots_img30ATUALIZADA.jpg);
+    background-image: url(../assets/imgs/TwentyonePilots_img30ATUALIZADA.jpg);
 }
 
 .banner4 {
@@ -522,7 +522,7 @@ ul {
 
 .container6 {
     display: flex;
-    background-image: url(./fundo_carrossel2.jpg);
+    background-image: url(../assets/imgs/fundo_carrossel2.jpg);
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
@@ -755,7 +755,7 @@ ul {
 .container7 {
     display: flex;
     justify-content: center;
-    background-image: url(./grammy_fundo.jpg);
+    background-image: url(../assets/imgs/grammy_fundo.jpg);
 }
 
 .banner7 {
