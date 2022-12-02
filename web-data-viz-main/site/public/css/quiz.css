@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square');
+
+* {
+    font-family: 'Nova Square', cursive;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.caixa_quiz{
+    display: flex;
+    background-color: gray;
+    width: 500px;
+    height: 450px;
+    margin-left: 500px;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagem_texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+}
+
+.botoes_cima{
+    display: flex;
+    justify-content: center;
+}
+
+.botoes_baixo{
+    display: flex;
+    justify-content: center;
+}
