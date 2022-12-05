@@ -15,7 +15,7 @@
         <nav>
             <h2 class="logo"> <img src="assets/imgs/logo_branco.png"></h2>
             <ul>
-                <li><a href="Tela-Inicial.HTML">HomeTown</a></li>
+                <li><a href="index.html">HomeTown</a></li>
                 |
                 <li><a href="cadastro.html">Login</a></li>
                 |
@@ -23,9 +23,13 @@
                 |
                 <li><a href="mural.html">Skeleton Clique</a></li>
                 |
-                <li><a href="#">Quiz</a></li>
+                <li><a href="encaminhamentoQuiz.html">Quiz</a></li>
             </ul>
-            <button type="button" id="button_header">Ouça agora!</button>
+            <div class="hello">
+                <a href="https://www.cvv.org.br/" style="text-decoration: none; color: white;">
+                    <h3>Stay Alive, <span id="b_usuario">usuário</span></h3>
+                </a>
+            </div>
         </nav>
     </div>
 
@@ -36,7 +40,7 @@
             <div class="cabecalho">
                 <h1>We are <br> Twenty Øne Piløts</h1>
             </div>
-            <img src="./logo_branco.png">
+            <img src="assets/imgs/logo_branco.png">
             <div class="botoes">
                 <a href="#container2"> <button> HISTÓRIA </button> </a>
                 <a href="#caixa_selftitled"> <button> ALBÚNS </button></a>
@@ -312,13 +316,13 @@
                     </div>
                     <div class="caixa_capa">
                         <img src="./assets/imgs/Twenty-One-Pilots-Blurryface.JPG" class="item item-atual" id="caixa_blurryface">
-                        <a href="#">
+                        <a href="tela-blurryface.html">
                             <p id="titulo_blurryface">Blurryface</p>
                         </a>
                     </div>
                     <div class="caixa_capa">
                         <img src="./assets/imgs/Twenty-One-Pilots-Trench.JPG" class="item item-atual" id="caixa_trench">
-                        <a href="#">
+                        <a href="tela-trench.html">
                             <p id="titulo_trench">Trench</p>
                         </a>
                     </div>
@@ -423,3 +427,7 @@
 
 
 </html>
+
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+</script>

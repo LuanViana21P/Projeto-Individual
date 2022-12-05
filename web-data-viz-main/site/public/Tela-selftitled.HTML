@@ -6,39 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We´re Twenty Øne Piløts</title>
-    <link rel="stylesheet" href="Tela-selftitled.CSS">
+    <link rel="stylesheet" href="/css/Tela-selftitled.CSS">
 </head>
 
 <body>
 
     <div class="header">
         <nav>
-            <h2 class="logo"> <img src="logo_self.png"></h2>
+            <h2 class="logo"> <img src="../assets/imgs/logo_self.png"></h2>
             <ul>
-                <li><a href="Tela-Inicial.HTML">HomeTown</a></li>
+                <li><a href="index.html">HomeTown</a></li>
                 |
-                <li><a href="TelaLogin.HTML">Login</a></li>
+                <li><a href="cadastro.html">Login</a></li>
                 |
-                <li><a href="TelaLogin.HTML">Cadastro</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
                 |
-                <li><a href="#">Skeleton Clique</a></li>
+                <li><a href="mural.html">Skeleton Clique</a></li>
                 |
-                <li><a href="#">Quiz</a></li>
+                <li><a href="encaminhamentoQuiz.html">Quiz</a></li>
             </ul>
-            <button type="button" id="button_header">Ouça agora!</button>
+            <div class="hello">
+                <a href="https://www.cvv.org.br/" style="text-decoration: none; color: black;">
+                    <h3>Stay Alive, <span id="b_usuario">usuário</span></h3>
+                </a>
+            </div>
         </nav>
     </div>
 
 
     <div class="container1">
         <div class="banner1">
-            <img src="./capa_transparente_selftitled.png">
+            <img src="../assets/imgs/capa_transparente_selftitled.png">
         </div>
         <div class="texto_banner1">
             <div class="imagem_texto_banner1">
-                <img src="./Caveira_selftitled.png">
+                <img src="../assets/imgs/Caveira_selftitled.png">
                 <p> Self Titled </p>
-                <img src="./Caveira_selftitled_invertida.png">
+                <img src="../assets/imgs/Caveira_selftitled_invertida.png">
             </div>
 
             <p>
@@ -49,12 +53,12 @@
                 cada uma de suas letras.
             </p>
         </div>
-        <img src="./escorrimento_transparent.png" id="escorrimento_container1">
+        <img src="../assets/imgs/escorrimento_transparent.png" id="escorrimento_container1">
     </div>
 
     <div class="container2">
         <div class="banner2">
-            <img src="./taxiCab_arte.JPEG">
+            <img src="../assets/imgs/taxiCab_arte.JPEG">
             <p>
                 "Então eu me sentei do chão <br>
                 E encontrei o fôlego que eu estava procurando <br>
@@ -73,9 +77,9 @@
         </div>
         <div class="texto_banner2">
             <div class="imagem_texto_banner2">
-                <img src="./taxicab_art_invertido.png">
+                <img src="../assets/imgs/taxicab_art_invertido.png">
                 <p id="taxi_cab"><b>Taxi Cab</b></p>
-                <img src="./taxicab_art.png">
+                <img src="../assets/imgs/taxicab_art.png">
             </div>
 
             <p>
@@ -87,14 +91,14 @@
                 homens que estão no banco da frente são Deus e Tyler, em seu estado
                 mais lúcido.
             </p>
-            <img src="./escorrimento_transparent.png" id="escorrimento_container2">
+            <img src="../assets/imgs/escorrimento_transparent.png" id="escorrimento_container2">
         </div>
 
     </div>
 
     <div class="container3">
         <div class="banner3">
-            <img src="./addicted_mesa_art.JPEG">
+            <img src="../assets/imgs/addicted_mesa_art.JPEG">
             <p>
                 "Eu tento correr desesperadamente pela areia <br>
                 Enquanto eu seguro a água <br>
@@ -116,9 +120,9 @@
         </div>
         <div class="texto_banner3">
             <div class="imagem_texto_banner3">
-                <img src="./addicted_art_transparente.png">
+                <img src="../assets/imgs/addicted_art_transparente.png">
                 <p id="addicted">Addicted With a Pen</p>
-                <img src="./addicted_art_transparente.png">
+                <img src="../assets/imgs/addicted_art_transparente.png">
             </div>
 
             <p>
@@ -130,12 +134,12 @@
                 nos desertos de sua mente, onde ele não encontrou sequer uma gota de vida.
             </p>
         </div>
-        <img src="./escorrimento_transparent.png" id="escorrimento_container3">
+        <img src="../assets/imgs/escorrimento_transparent.png" id="escorrimento_container3">
     </div>
 
     <div class="container4">
         <div class="banner4">
-            <img src="./Fundo_isleOf.jpg">
+            <img src="../assets/imgs/Fundo_isleOf.jpg">
             <p>
                 Como é frustrante, e tão degradante <br>
                 Seu tempo, estamos perdendo <br>
@@ -152,9 +156,9 @@
         </div>
         <div class="texto_banner4">
             <div class="imagem_texto_banner4">
-                <img src="./passaro.png">
+                <img src="../assets/imgs/passaro.png">
                 <p id="taxi_cab"><b>Isle of Flightless Birds</b></p>
-                <img src="./passaro.png">
+                <img src="../assets/imgs/passaro.png">
             </div>
 
             <p>
@@ -165,7 +169,7 @@
                 para o chão pelos "demônios" que voam ao redor delas e moldam
                 suas emoções.
             </p>
-            <img src="./escorrimento_transparent.png" id="escorrimento_container4">
+            <img src="../assets/imgs/escorrimento_transparent.png" id="escorrimento_container4">
         </div>
 
     </div>
@@ -264,3 +268,6 @@
 </body>
 
 </html>
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+</script>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square');
+
+* {
+    font-family: 'Nova Square', cursive;
+    /*font-family: 'Noto Sans Limbu', sans-serif;*/
+    /*font-family: 'Bayon', sans-serif;*/
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(46, 44, 44), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo img {
+    width: 75px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition: .3s;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
+}
+
+ul {
+    color: white;
+}
+
+.hello {
+    width: auto;
+    color: white;
+    font-size: 19px;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+    2px -1px 2px #000, -1px -1px #000;
+  }
+  
+  .hello a:hover {
+    color: black;
+    transition: .3s;
+    text-decoration: underline;
+  }
+/* HEADER */
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.container h1{
+    color: white;
+    margin-top: 170px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.container button{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: transparent;
+    color: white;
+    border-radius: 100px;
+    border: 2px solid white;
+    width: 400px;
+    height: 70px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.6s;
+}
+
+.container button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%; margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* BARRA DE ROLAMENTO */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #666;
+}
+
+/* BARRA DE ROLAMENTO */
+
+
+/*RODAPÉ/FOOTER*/
+
+footer {
+    padding: 15px 0;
+    background-color: #000000;
+    border-top: 2px solid #f4eded;
+}
+
+footer .container_header {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: #f4eded;
+    text-decoration: none;
+}

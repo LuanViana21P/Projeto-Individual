@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/ranking.css">
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body onload="carregarRanking()">
+
+    <div class="container">
+        <h1>Ranking Geral</h1>
+        <div class="banner">
+            <table id="ranking">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+
+                <tbody id="pontuacoes">
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="voltar"><a href="./encaminhamentoQuiz.html">Voltar</a></div>
+        
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    function carregarRanking() {
+        fetch(`/usuarios/carregarRanking`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+
+                    for (let percurssor= 0;
+                         percurssor <= json.length;
+                         percurssor++)
+                          {
+                         pontuacoes.innerHTML += `
+                            <tr>
+                                <td>${percurssor + 1}</td>
+                                <td>${json[percurssor].nome}</td>
+                                <td>${json[percurssor].pontos}pts</td>
+                            </tr>
+                        `
+                        }
+                });
+
+            } else {
+                throw ("Houve um erro ao tentar realizar a listagem!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+    }
+
+</script>

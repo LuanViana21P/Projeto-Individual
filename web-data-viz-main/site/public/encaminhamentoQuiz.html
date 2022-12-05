@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/encaminhamentoQuiz.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <h2 class="logo"> <img src="assets/imgs/logo_branco.png"></h2>
+            <ul>
+                <li><a href="index.html">HomeTown</a></li>
+                |
+                <li><a href="cadastro.html">Login</a></li>
+                |
+                <li><a href="cadastro.html">Cadastro</a></li>
+                |
+                <li><a href="mural.html">Skeleton Clique</a></li>
+                |
+                <li><a href="encaminhamentoQuiz.html">Quiz</a></li>
+            </ul>
+            <div class="hello">
+                <a href="https://www.cvv.org.br/" style="text-decoration: none; color: white;">
+                    <h3>Stay Alive, <span id="b_usuario">usuário</span></h3>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+
+        <h1>Vamos ver se você realmente conhece a banda? <br> Clique e começe o quiz!</h1>
+
+        <div class="botoes">
+            <button onclick="comecar()"> Começar! </button>
+            <button onclick="ranking()"> Ranking </button>
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="container_header">
+            <p>We´re Twenty Øne Piløts ||-// &copy; 2022</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+
+    function comecar(){
+        setTimeout(() => {
+                     window.location = "quiz.html";
+                 }, "1000")
+    }
+
+    function ranking(){
+        setTimeout(() => {
+                     window.location = "ranking.html";
+                 }, "1000")
+    }
+</script>
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+</script>

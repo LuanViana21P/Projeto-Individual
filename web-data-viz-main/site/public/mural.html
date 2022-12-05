@@ -26,7 +26,7 @@
         <nav>
             <h2 class="logo"> <img src="./assets/imgs/logo_clique.png"></h2>
             <ul>
-                <li><a href="Tela-Inicial.HTML">HomeTown</a></li>
+                <li><a href="index.html">HomeTown</a></li>
                 |
                 <li><a href="cadastro.html">Login</a></li>
                 |
@@ -34,10 +34,13 @@
                 |
                 <li><a href="mural.html">Skeleton Clique</a></li>
                 |
-                <li><a href="#">Quiz</a></li>
+                <li><a href="encaminhamentoQuiz.html">Quiz</a></li>
+                |
             </ul>
             <div class="hello">
-                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+               <a href="https://www.cvv.org.br/" style="text-decoration: none; color: white;">
+                <h3>Stay Alive, <span id="b_usuario">usuário</span></h3>
+                </a> 
             </div>
         </nav>
             
@@ -146,7 +149,7 @@
 
             if (resposta.ok) {
                 window.alert("Post realizado com sucesso pelo usuario de ID: " + idUsuario + "!");
-                window.location = "/dashboard/mural.html";
+                window.location = "mural.html";
                 limparFormulario();
                 finalizarAguardar();
             } else if (resposta.status == 404) {

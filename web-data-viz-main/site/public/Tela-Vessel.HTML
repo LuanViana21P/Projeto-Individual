@@ -6,32 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We´re Twenty Øne Piløts</title>
-    <link rel="stylesheet" href="Tela-Vessel.CSS">
+    <link rel="stylesheet" href="/css/Tela-Vessel.CSS">
 </head>
 
 <body>
 
     <div class="header">
         <nav>
-            <h2 class="logo"> <img src="logo_rab.png"></h2>
+            <h2 class="logo"> <img src="../assets/imgs/logo_rab.png"></h2>
             <ul>
-                <li><a href="Tela-Inicial.HTML">HomeTown</a></li>
+                <li><a href="index.html">HomeTown</a></li>
                 |
-                <li><a href="TelaLogin.HTML">Login</a></li>
+                <li><a href="cadastro.html">Login</a></li>
                 |
-                <li><a href="TelaLogin.HTML">Cadastro</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
                 |
-                <li><a href="#">Skeleton Clique</a></li>
+                <li><a href="mural.html">Skeleton Clique</a></li>
                 |
-                <li><a href="#">Quiz</a></li>
+                <li><a href="encaminhamentoQuiz.html">Quiz</a></li>
             </ul>
-            <button type="button" id="button_header">Ouça agora!</button>
+            <div class="hello">
+                <a href="https://www.cvv.org.br/" style="text-decoration: none; color: white;">
+                    <h3>Stay Alive, <span id="b_usuario">usuário</span></h3>
+                </a>
+            </div>
         </nav>
     </div>
 
     <div class="container1">
         <div class="banner1">
-            <img src="./Vessel_capa.jpg" width="300px">
+            <img src="../assets/imgs/Vessel_capa.jpg" width="300px">
             <div class="texto_banner1">
                 <h1>VESSEL <span id="data">2013</span></h1> <br><br>
                 <p>1.Ode To Sleep <br>
@@ -246,35 +250,35 @@
     <div class="redes_sociais">
 
         <div class="rede_social">
-            <img src="./simbolo_facebook.png">
+            <img src="../assets/imgs/simbolo_facebook.png">
             <a href="https://www.facebook.com/twentyonepilots/events/">
                 <p>Twenty One Pilots</p>
             </a>
         </div>
 
         <div class="rede_social">
-            <img src="./simbolo_insta.png">
+            <img src="../assets/imgs/simbolo_insta.png">
             <a href="https://www.instagram.com/twentyonepilots/">
                 <p>@twentyonepilots</p>
             </a>
         </div>
 
         <div class="rede_social">
-            <img src="./simbolo_spotify.png">
+            <img src="../assets/imgs/simbolo_spotify.png">
             <a href="https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx">
                 <p>Twenty One Pilots</p>
             </a>
         </div>
 
         <div class="rede_social">
-            <img src="./simbolo_tiktok.png">
+            <img src="../assets/imgs/simbolo_tiktok.png">
             <a href="https://www.tiktok.com/@twentyonepilots">
                 <p>twentyonepilots</p>
             </a>
         </div>
 
         <div class="rede_social">
-            <img src="./simbolo_twitter.png">
+            <img src="../assets/imgs/simbolo_twitter.png">
             <a href="https://twitter.com/twentyonepilots?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                 <p>@twentyonepilots</p>
             </a>
@@ -291,3 +295,6 @@
 </body>
 
 </html>
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+</script>

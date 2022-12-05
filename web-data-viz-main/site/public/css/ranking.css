@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square');
+
+* {
+    font-family: 'Nova Square', cursive;
+    /*font-family: 'Noto Sans Limbu', sans-serif;*/
+    /*font-family: 'Bayon', sans-serif;*/
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/imgs/TwentyonePilots_img21.jpg);
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(46, 44, 44), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo img {
+    width: 75px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition: .3s;
+    text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+        2px -1px 2px #000, -1px -1px #000;
+}
+
+ul {
+    color: white;
+}
+
+#button_header {
+    border: none;
+    background: #000000;
+    padding: 12px 30px;
+    border: solid 3px white;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+#button_header:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/*FIM DO HEADER*/
+
+table{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+
+.container{
+    background-color: rgba(0, 0, 0, 0.934);
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 250px;
+    box-shadow: 0px 0px 30px black;
+    border: 1px solid white;
+}
+
+.container a{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+.voltar{
+    display: flex;
+    justify-content: start;
+}
+
+.banner{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: auto;
+}
+
+.container h1{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

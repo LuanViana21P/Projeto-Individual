@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Nova Square', cursive;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/imgs/trench_wallpaper2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100%);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 8%;
+    font-size: 22px;
+    line-height: 42px;
+    color: rgb(80,80,80);
+}
+
+
+/* HEADER */
+
+
+
+.header2 {
+  height: 100vh;
+  width: 100%;
+  background-image:url(../assets/imgs/fundo_pretoTrench.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo img {
+  width: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+  2px -1px 2px #000, -1px -1px #000;
+}
+
+nav ul li a:hover {
+  color: black;
+  transition: .3s;
+  text-shadow: 1px 1px 1px white, -1px 1px 1px white,
+      1px -1px 1px white, -1px -1px white;
+}
+
+ul {
+  color: white;
+}
+
+.hello {
+  width: auto;
+  color: white;
+  font-size: 19px;
+  text-shadow: 2px 2px 2px #000, -1px 2px 2px #000,
+  2px -1px 2px #000, -1px -1px #000;
+}
+
+.hello a:hover {
+  color: black;
+  transition: .3s;
+  text-shadow: 1px 1px 1px white, -1px 1px 1px white,
+      1px -1px 1px white, -1px -1px white;
+}
+  /* HEADER */
+
+  
+
+  .container1 img{
+    width: 400px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 30px black;
+  }
+
+  .banner1{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+  }
+
+  .banner1 h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 300px;
+    margin-left: 10px;
+    color: yellow;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black,
+    1px -1px 1px black, -1px -1px black;
+  }
+
+  #data{
+    font-size: 25px;
+  }
+
+
+
+
+  .container2{
+    background-color: black;
+  }
+
+  .banner2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .banner2 img{
+    width: 500px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    transition: 0.6s;
+  }
+
+  .banner2 img:hover{
+    box-shadow: 0px 0px 30px yellow;
+    border: 1px solid yellow;
+  }
+
+  .texto2{
+    color: white;
+  }
+
+  .texto2 h1{
+    margin-top: 250px;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .texto2 p{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  /* CONTAINER 2 */
+
+  /* CONTAINER 2 */
+
+  .container3{
+    background-image: url(../assets/imgs/fundo_jumpsuit.jpg);
+  }
+
+  .banner3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .banner3 img{
+    width: 650px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    transition: 0.6s;
+  }
+
+  #video3{
+    margin-top: 180px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 30px black;
+  }
+
+  .texto3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(49, 79, 39);
+    height: 650px;
+    width: 700px;
+    margin-bottom: 170px;
+    margin-top: 100px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px black;
+  }
+
+  .texto3 h1{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .texto3 p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .botao_video{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botao_video button{
+    background-color: black;
+    color: rgb(229, 255, 0);
+    height: 65px;
+    border-radius: 100px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.6s;
+  }
+
+  .botao_video button:hover{
+    background-color: white;
+    
+  }
+
+
+  /* CONTAINER 3 */
+
+  /* CONTAINER 3 */
+
+  .container4{
+    background-image: url(../assets/imgs/fundo_chlorine.png);
+  }
+
+  .banner4{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .banner4 img{
+    width: 650px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    transition: 0.6s;
+  }
+
+  #video4{
+    margin-top: 180px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 30px black;
+  }
+
+  .texto4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.797);
+    height: 710px;
+    width: 700px;
+    margin-bottom: 170px;
+    margin-top: 100px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px black;
+  }
+
+  .texto4 h1{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .texto4 p{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  .botao_video{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botao_video button{
+    background-color: black;
+    color: yellow;
+    height: 65px;
+    border-radius: 100px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.6s;
+  }
+
+  .botao_video button:hover{
+    background-color: white;
+    
+  }
+
+  /* CONTAINER 3 */
+
+    /* CONTAINER 2 */
+
+    .container5{
+        background-image: url(../assets/imgs/fundo_leave.png);
+      }
+    
+      .banner5{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    
+      .banner5 img{
+        width: 650px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        transition: 0.6s;
+      }
+    
+      #video5{
+        margin-top: 180px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 30px black;
+      }
+    
+      .texto5{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.774);
+        height: 650px;
+        width: 700px;
+        margin-bottom: 170px;
+        margin-top: 100px;
+        border-radius: 40px;
+        box-shadow: 0px 0px 30px black;
+      }
+    
+      .texto5 h1{
+        margin-top: 75px;
+        text-align: center;
+        font-size: 45px;
+      }
+    
+      .texto5 p{
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    
+      .botao_video{
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .botao_video button{
+        background-color: black;
+        color: yellow;
+        border: 1px solid white;
+        height: 65px;
+        border-radius: 100px;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        transition: 0.6s;
+      }
+    
+      .botao_video button:hover{
+        background-color: white;
+        color: rgb(255, 208, 0);
+      }
+    
+    
+    /* CONTAINER 5 */ 
+
+    /* CONTAINER 6 */
+
+    .container6{
+        background-image: url(../assets/imgs/fundo_pretoTrench.jpg);
+      }
+
+      .banner6{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .musica{
+        margin-left: 30px;
+      }
+
+
+    /* CONTAINER 6 */
+
+
+/* BARRA DE ROLAMENTO */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #666;
+}
+
+.banner6 h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+/* BARRA DE ROLAMENTO */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #666;
+}
+
+.banner6 h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* BARRA DE ROLAMENTO */
+
+
+/*RODAPÉ/FOOTER*/
+
+.redes_sociais {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .rede_social {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    gap: 3%;
+  }
+  
+  .rede_social p {
+    color: #fff;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    transition: 0.6ss;
+  }
+
+  .rede_social p:hover {
+    color: rgb(255, 0, 0);
+  }
+  
+  .rede_social a {
+    text-decoration: none;
+  }
+  
+  .redes_sociais img {
+    width: 25px;
+    height: 25px;
+  }
+
+footer {
+    padding: 15px 0;
+    background-color: #000000;
+    border-top: 2px solid #f4eded;
+}
+
+footer .container_header {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: #f4eded;
+    text-decoration: none;
+}

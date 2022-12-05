@@ -31,8 +31,28 @@ function cadastrar(nome, email, senha) {
     return database.executar(instrucao);
 }
 
+function finalizar(pontos, usuario){
+    var instrucao = `
+    INSERT INTO pontuacao (pontos, fkUsuario) VALUES ('${pontos}', '${usuario}');
+`;
+return database.executar(instrucao);
+}
+
+function carregarRanking() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
+    var instrucao = `
+    SELECT usuario.nome, pontuacao.pontos FROM pontuacao
+    JOIN usuario ON fkUsuario = id
+    ORDER BY pontos DESC;
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
     entrar,
     cadastrar,
+    finalizar,
+    carregarRanking,
     listar,
 };
